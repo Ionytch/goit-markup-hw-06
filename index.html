@@ -374,12 +374,23 @@
                             </use>
                         </svg></a>
                 </li>
-            </ul>
-
+            </ul>            
+        </div>
+        <div class="">
+            <div class='footer-mail'><label for="" class="input-title">Підпишіться на розсилку</label>
+                <div class="">
+                    <input type="email" class="footer-input" name="user-email" placeholder="E-mail">
+                </div>
+                <button type="submit" class="btn footer-button">Підписатися
+                    <svg class="submit-icon" width="24px" height="24px">
+                        <use href="./images/icons/icons.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
         </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             
             <button type="button" class="modal-close" data-modal-close>
@@ -417,17 +428,17 @@
                 </div></div>
                 <div class='input-field'>
                 <label for="feedback" class="input-title">Коментар</label>
-                <textarea class="form-input" name="feedback" placeholder="Введіть текст" id="feedback"></textarea>
+                <textarea class="form-input textarea-input" name="feedback" placeholder="Введіть текст" id="feedback"></textarea>
                 </div> 
-                <div>
-                    <input type="checkbox" name="user-policy" value="true" class="input-check" id="user-policy">
+                <div class="checkbox-field">
+                    <input type="checkbox" name="user-policy" value="true" class="input-check visually-hidden" id="user-policy">
                 <label for="user-policy" class="checkbox-title">
                     <span>
-                        <svg class="chekbox-icon" width="16px" height="15px">
+                        <svg class="chekbox-icon" width="17px" height="16px">
                             <use href="./images/icons/icons.svg#icon-check"></use>
                         </svg>
                     </span>
-                    Погоджуюся з розсилкою та приймаю Умови договору</label>
+                    Погоджуюся з розсилкою та приймаю <a href="" class="link conditions-link conditions">Умови договору</a> </label>
                 </div>              
                 <button type="submit" class="btn submit">Відправити</button>
             </form>
