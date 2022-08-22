@@ -323,6 +323,7 @@
         </section>
          
     </main>
+    <!-- footer -->
     <footer class="footer">
         <div class="container footer-container">
             <div>
@@ -376,19 +377,22 @@
                 </li>
             </ul>            
         </div>
-        <div class="">
-            <div class='footer-mail'><label for="" class="input-title">Підпишіться на розсилку</label>
-                <div class="">
-                    <input type="email" class="footer-input" name="user-email" placeholder="E-mail">
+        <form>
+            <div class="footer-form">
+               <div>
+                <label for="user-email" class="footer-title">Підпишіться на розсилку</label>
+                <div>
+                    <input type="email" class="footer-input" name="user-email" id="user-email" placeholder="E-mail">
                 </div>
+            </div>
                 <button type="submit" class="btn footer-button">Підписатися
                     <svg class="submit-icon" width="24px" height="24px">
                         <use href="./images/icons/icons.svg#icon-send"></use>
                     </svg>
                 </button>
             </div>
-        </div>
-        </div>
+        </form>
+    </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -403,25 +407,25 @@
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal-form">
                 <div class='input-field'>                       
-                <label for="" class="input-title">Ім'я</label>
+                <label for="user-name" class="input-title">Ім'я</label>
                 <div class="input-wrap">    
-                <input type="text" class="form-input" name="user-name" placeholder=" " required>
+                <input type="text" class="form-input" name="user-name" id="user-name" placeholder=" " required>
                 <svg class="input-icon" width="18px" height="18px">
                     <use href="./images/icons/icons.svg#person-black-18dp-1"></use>
                 </svg>
                 </div></div>
                 
-                <div class='input-field'><label for="" class="input-title">Телефон</label>
+                <div class='input-field'><label for="user-tel" class="input-title">Телефон</label>
                     <div class="input-wrap">
-                    <input type="tel" class="form-input" name="user-tel" placeholder=" " required>
+                    <input type="tel" class="form-input" name="user-tel" id="user-tel" placeholder=" " required>
                 <svg class="input-icon" width="18px" height="18px">
                     <use href="./images/icons/icons.svg#phone-black-18dp-1"></use>
                 </svg>
                 </div></div>
                 
-                <div class='input-field'><label for="" class="input-title">Пошта</label>
+                <div class='input-field'><label for="user-email" class="input-title">Пошта</label>
                     <div class="input-wrap">
-                    <input type="email" class="form-input" name="user-email" placeholder=" " required>
+                    <input type="email" class="form-input" name="user-email" id="user-email" placeholder=" " required>
                 <svg class="input-icon" width="18px" height="18px">
                     <use href="./images/icons/icons.svg#email-black-18dp-1"></use>
                 </svg>
@@ -434,8 +438,8 @@
                     <input type="checkbox" name="user-policy" value="true" class="input-check visually-hidden" id="user-policy">
                 <label for="user-policy" class="checkbox-title">
                     <span>
-                        <svg class="chekbox-icon" width="17px" height="16px">
-                            <use href="./images/icons/icons.svg#icon-check"></use>
+                        <svg class="chekbox-icon" width="11px" height="8px">
+                            <use href="./images/icons/icons.svg#vector"></use>
                         </svg>
                     </span>
                     Погоджуюся з розсилкою та приймаю <a href="" class="link conditions-link conditions">Умови договору</a> </label>
